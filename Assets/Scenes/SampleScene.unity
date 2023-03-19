@@ -308,6 +308,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 474424287981313731, guid: e485e019bc4619f4bb9e0ca163ef9dca, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: df20ab578ef5c6d4f86b25275d8bfecf, type: 2}
     - target: {fileID: 5463294705895420981, guid: e485e019bc4619f4bb9e0ca163ef9dca, type: 3}
       propertyPath: m_Name
       value: Cube
