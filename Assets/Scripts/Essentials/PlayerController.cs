@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
         ver = Input.GetAxis("Vertical");
 
         // This is for moving the player
-        transform.Translate(new Vector3(hor*playerSpeed*Time.deltaTime,ver*playerSpeed*Time.deltaTime,0));
+        transform.Translate(hor*playerSpeed*Time.deltaTime,ver*playerSpeed*Time.deltaTime,0);
         
         // This is for shooting
 
