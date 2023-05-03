@@ -60,5 +60,14 @@ public class PlayerController : MonoBehaviour
         canFire = false;
         yield return new WaitForSeconds(fireRate);
         canFire = true;
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(other.gameObject);
+        }
     }
 }

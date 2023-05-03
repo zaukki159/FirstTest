@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -8537600915917283703}
   - component: {fileID: -5369159176739632977}
   - component: {fileID: 2918373440660945016}
+  - component: {fileID: 8114420186541442673}
   m_Layer: 0
   m_Name: EnemyShip
   m_TagString: Untagged
@@ -130,3 +131,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 9051206085670627166, guid: 4694dbbcc0fc36c4aa4072bda5a57996, type: 3}
   bullet: {fileID: 2117590314046182684, guid: 0ded09ecef3772449b1580b92e5d689e, type: 3}
+--- !u!65 &8114420186541442673
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876784010869349676}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 482.82144, y: 134.95938, z: 387.2505}
+  m_Center: {x: 0, y: 0, z: 0}
