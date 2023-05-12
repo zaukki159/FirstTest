@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1747108985884329160}
   - component: {fileID: 1423354445267618178}
   - component: {fileID: -6695010514614579564}
+  - component: {fileID: 4280198597955695343}
   m_Layer: 0
   m_Name: PlayerShip
   m_TagString: Player
@@ -122,3 +123,16 @@ CapsuleCollider:
   m_Height: 19.91
   m_Direction: 0
   m_Center: {x: 0, y: -0.0000007947286, z: -1.6018192}
+--- !u!114 &4280198597955695343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824270872416837155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e198f4def467831479e4e626d61bf84d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCam: {fileID: 0}

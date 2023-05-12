@@ -16,7 +16,8 @@ public class HomingEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(target);
+        Vector3 dir = new Vector3(target.position.x, target.position.y, target.position.z);
+        transform.LookAt(dir);
         transform.Translate(Vector3.forward * enemySpeed * Time.deltaTime);
     }
     private void OnTriggerEnter(Collider other)
