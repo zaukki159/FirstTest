@@ -21,10 +21,12 @@ public class PlayerController : MonoBehaviour
     public GameObject bullet;
     public float fireRate = 0.5f;
     public bool canFire = true;
-
+    public Rigidbody rb;
+    public Transform rotateTowards;
     // Start is called before the first frame update
     void Start()
     {
+        rb = GetComponent<Rigidbody>();
         if (twinstick)
         {
             gun.GetComponent<TwinStickAim>().enabled = true;
@@ -44,11 +46,17 @@ public class PlayerController : MonoBehaviour
         ver = Input.GetAxis("Vertical");
 
         // This is for moving the player
-        transform.Translate(hor*playerSpeed*Time.deltaTime,ver*playerSpeed*Time.deltaTime,0);
-        
+        Vector2 movement = new Vector2(-hor, -ver);
+        rb.velocity = movement * playerSpeed;
+
+        Vector3 mousePosition = Input.mousePosition;
+        Vector3 playerPosition = Camera.main.WorldToScreenPoint(transform.position);
+        Vector3 direction = mousePosition - playerPosition;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(angle, 270f, -90);
         // This is for shooting
 
-        if(!classic && Input.GetButton("Fire1")&&canFire)
+        if (!classic && Input.GetButton("Fire1")&&canFire)
         {
             StartCoroutine("Shoot");
         }

@@ -24,14 +24,20 @@ public class LevelManager : MonoBehaviour
 
     public void ChangeLevel(int levelNumber)
     {
-        pause.paused = false;
-        fadeScreen.SetTrigger("ChangeLevel");
-        StartCoroutine(NewLevel(levelNumber));
+        //pause.paused = false;
+        //fadeScreen.SetTrigger("ChangeLevel");
+        Time.timeScale = 1;
+        SceneManager.LoadScene(levelNumber);
     }
 
     public IEnumerator NewLevel(int levelNumber)
     {
         yield return new WaitForSeconds(transitionTime);
-        SceneManager.LoadScene(levelNumber);
+      
+    }
+
+    public void exitApplication()
+    {
+        Application.Quit();
     }
 }
