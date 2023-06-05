@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     public bool canFire = true;
     public Rigidbody rb;
     public Transform rotateTowards;
+    public GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -75,6 +76,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
+           
             Destroy(other.gameObject);
         }
     }

@@ -5,7 +5,8 @@ using UnityEngine;
 public class HomingEnemy : MonoBehaviour
 {
     public Transform target;
-    public float enemySpeed = 5f;
+    public float enemySpeed = 10f;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,7 @@ public class HomingEnemy : MonoBehaviour
     void Update()
     {
 
-        Vector2 direction =target.position - transform.position;
+        Vector2 direction =target.position - transform.position;    
         //direction.y = 90;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         Quaternion targetRotation = Quaternion.Euler(-angle, 90f, -90);
