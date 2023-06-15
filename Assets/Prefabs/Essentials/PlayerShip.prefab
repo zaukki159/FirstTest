@@ -109,6 +109,9 @@ MonoBehaviour:
   bullet: {fileID: 7423043792993618984, guid: fc4d618561e814c4c8f30a6fb4bcf745, type: 3}
   fireRate: 0.5
   canFire: 1
+  rb: {fileID: 0}
+  rotateTowards: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!136 &-6695010514614579564
 CapsuleCollider:
   m_ObjectHideFlags: 0

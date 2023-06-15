@@ -18,7 +18,7 @@ public class HomingEnemy : MonoBehaviour
     void Update()
     {
 
-        Vector2 direction =target.position - transform.position;    
+        Vector2 direction =target.position - transform.position;
         //direction.y = 90;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         Quaternion targetRotation = Quaternion.Euler(-angle, 90f, -90);
