@@ -811,7 +811,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -840, y: 489}
+  m_AnchoredPosition: {x: -792, y: 349}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &395542942
@@ -2937,7 +2937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 362a8b4dec1c80045b3e97a1ec93cc12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToSpawn: 3
+  timeToSpawn: 1
   current_Timer: 0
   enemyFighter: {fileID: 1876784010869349676, guid: d317e2d1826deb54aa318b269c30d1b7, type: 3}
   spawnPosition: {fileID: 763666015}
@@ -4111,7 +4111,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2083216955}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4288,6 +4288,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 2083216960}
+    - target: {fileID: 9051206085670627152, guid: 4694dbbcc0fc36c4aa4072bda5a57996, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f56e49d6390351442929bc1821812095, type: 2}
     - target: {fileID: 9051206085670627154, guid: 4694dbbcc0fc36c4aa4072bda5a57996, type: 3}
       propertyPath: m_Name
       value: Player
@@ -4306,7 +4310,7 @@ PrefabInstance:
       objectReference: {fileID: 7423043792993618984, guid: fc4d618561e814c4c8f30a6fb4bcf745, type: 3}
     - target: {fileID: 9051206085670627155, guid: 4694dbbcc0fc36c4aa4072bda5a57996, type: 3}
       propertyPath: fireRate
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9051206085670627155, guid: 4694dbbcc0fc36c4aa4072bda5a57996, type: 3}
       propertyPath: gameManager

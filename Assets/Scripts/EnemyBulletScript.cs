@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyBulletScript : MonoBehaviour
 {
 
-    public float speed = 15f;
+    public float speed = 80f;
 
     // Start is called before the first frame update
     void Start()

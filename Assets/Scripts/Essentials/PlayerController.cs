@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
 
     [Header ("Player Movement")]
     [Range(0.1f, 30f)]
-    public float playerSpeed = 10f;
+    public float playerSpeed = 50f;
     public float hor;
     public float ver;
     public float dep;
@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     [Header("Shooting")]
     public Transform gun;
     public GameObject bullet;
-    public float fireRate = 0.5f;
+    public float fireRate = 0.2f;
     public bool canFire = true;
     public Rigidbody rb;
     public Transform rotateTowards;
@@ -49,6 +49,9 @@ public class PlayerController : MonoBehaviour
         // This is for moving the player
         Vector2 movement = new Vector2(-hor, -ver);
         rb.velocity = movement * playerSpeed;
+        float posx = Mathf.Clamp(transform.position.x,-47,47);
+        float posy = Mathf.Clamp(transform.position.y, -5, 47);
+        transform.position = new Vector3(posx, posy, transform.position.z);
 
         Vector3 mousePosition = Input.mousePosition;
         Vector3 playerPosition = Camera.main.WorldToScreenPoint(transform.position);

@@ -5,7 +5,7 @@ using UnityEngine;
 public class HomingEnemy : MonoBehaviour
 {
     public Transform target;
-    public float enemySpeed = 10f;
+    public float enemySpeed = 30f;
     
     
     // Start is called before the first frame update
