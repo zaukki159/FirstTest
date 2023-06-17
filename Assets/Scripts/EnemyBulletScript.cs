@@ -6,6 +6,7 @@ public class EnemyBulletScript : MonoBehaviour
 {
 
     public float speed = 80f;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class EnemyBulletScript : MonoBehaviour
         {
             other.GetComponent<playerHealth>().damage(30);
             Destroy(gameObject);
+            
         }
     }
 }

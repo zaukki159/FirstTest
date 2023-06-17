@@ -24,6 +24,9 @@ public class PlayerController : MonoBehaviour
     public Rigidbody rb;
     public Transform rotateTowards;
     public GameManager gameManager;
+
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -81,6 +84,7 @@ public class PlayerController : MonoBehaviour
         {
            
             Destroy(other.gameObject);
+            
         }
     }
 }

@@ -114,6 +114,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   rotateTowards: {fileID: 0}
   gameManager: {fileID: 0}
+  explosion: {fileID: 2683600015063495398, guid: 54d6e1c8f9251e84f974b2d38f609e44, type: 3}
 --- !u!136 &-6695010514614579564
 CapsuleCollider:
   m_ObjectHideFlags: 0
