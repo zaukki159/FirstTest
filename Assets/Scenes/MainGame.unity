@@ -2937,7 +2937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 362a8b4dec1c80045b3e97a1ec93cc12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToSpawn: 1
+  timeToSpawn: 0.6
   current_Timer: 0
   enemyFighter: {fileID: 1876784010869349676, guid: d317e2d1826deb54aa318b269c30d1b7, type: 3}
   spawnPosition: {fileID: 763666015}
@@ -4316,6 +4316,10 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 589426150}
+    - target: {fileID: 9051206085670627155, guid: 4694dbbcc0fc36c4aa4072bda5a57996, type: 3}
+      propertyPath: playerSpeed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 9051206085670627166, guid: 4694dbbcc0fc36c4aa4072bda5a57996, type: 3}
       propertyPath: m_RootOrder
       value: 1
